@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    color: yellow;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+#nav-logo
+{
+    text-decoration: none;
+}
+
+
+#info-header
+{
+    text-align: center;
+}
+
+#info-text
+{
+    text-align: center;
+}
+
+nav a.active {
+    color: yellow;
+}
+
+#tastura
+{
+    content: url("slike/tastatura.jpg");
+}
+
+#mis
+{
+    content: url("slike/mis.jpg");
+}
+
+#headset
+{
+    content: url("slike/headset.jpg");
+}
+
+#stolica
+{
+    content: url("slike/stolica.jpg");
+}
+
+#monitor
+{
+    content: url("slike/monitor.jpg");
+}
+
+#logitech-tastatura
+{
+    content: url("slike/LOGITECH\ G413\ SE\ TKL\ Tactile\ US\ 920-010446\ Crna\ Gejmerska\ tastatura.png");
+}
+
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    color: yellow;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.product {
+    width: calc(33% - 50px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: 50%;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.product button {
+    width: 75px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.product button:hover {
+    background-color: darkgoldenrod;
+}
+
+#logitech-mis
+{
+    content: url("slike/LOGITECH\ G502\ X\ Plus\ Bežični\ gejmerski\ miš.png");
+}
+
+#onex-stolica
+{
+    content: url("slike/ONEX\ EV12\ Eolution\ Limited\ Red\ Gejmerska\ stolica.jpg");
+}
+
+#redragon-tastatura
+{
+    content: url("slike/REDRAGON\ Gejmerska\ tastatura\ Kumara\ K552\ RGB\ US\ \(Crna\).png");
+}
+
+#redragon-headset
+{
+    content: url("slike/REDRAGON\ Gejmerske\ slušalice\ ZEUS\ H510.png");
+}
+
+#samsung-monitor
+{
+    content: url("slike/SAMSUNG\ Odyssey\ 32\ VA\ G55T\ LC32G55TQBUXEN\ Monitor.png");
+}
+
+@keyframes to-right {
+    from {left: -500px;}
+    to {left: 0 ;}
+}
+
+.animation {
+    animation-name: to-right;
+    animation-duration: 3s;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .product {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
